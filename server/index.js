@@ -5,7 +5,7 @@ const app = express();
 app.use(cors({
 	origin:"*"
 }));
-const uri = "mongodb://127.0.0.1:27017";
+const uri = "mongodb+srv://vinay25mit:sdpa78e1@cluster0.seeif.mongodb.net/?retryWrites=true&w=majority";
 const client =  new mongoClient(uri);
 
 app.get('/getdata/students', async (req, res) => {
